@@ -1,0 +1,20 @@
+.navbar-items{
+    width:100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #fff;
+    transition: 0.5s;
+}
+.items{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+.items li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 13px;
+    color: #222;
+    cursor:pointer;
+}
