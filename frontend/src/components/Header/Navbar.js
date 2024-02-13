@@ -4,7 +4,7 @@ import logo_light from "../../assests/logo-black.jpg";
 import logo_dark from "../../assests/logo-white.png";
 import search_icon_light from "../../assests/search-w.png";
 import search_icon_dark from "../../assests/search-b.png";
-import toggle_light from "../../assests/night.png";
+// import toggle_light from "../../assests/night.png";
 import toggle_dark from "../../assests/day.png";
 
 const Navbar = ({ theme, setTheme }) => {
@@ -39,7 +39,7 @@ const Navbar = ({ theme, setTheme }) => {
         onClick={() => {
           toggle_mode();
         }}
-        src={theme === "light" ? toggle_light : toggle_dark}
+        src={theme === "light" ? toggle_dark : toggle_dark}
         alt=""
         className="toggle-icon"
       />
