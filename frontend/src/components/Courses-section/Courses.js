@@ -5,6 +5,7 @@ import courseImg2 from "../../assests/images/graphics-design.png";
 import courseImg3 from "../../assests/images/ui-ux.png";
 import "./courses.css";
 import CourseCard from "./CourseCard";
+import { Outlet, Link } from "react-router-dom";
 
 const coursesData = [
   {
@@ -58,11 +59,14 @@ const Courses = () => {
           </Col>
           {coursesData.map((item) => (
             <Col lg="4" md="6" sm="6">
-              <CourseCard key={item.id} item={item} />
+              <Link to="/enroll" className="CourseCard-link">
+                <CourseCard key={item.id} item={item} />
+              </Link>
             </Col>
           ))}
         </Row>
       </Container>
+      <Outlet />
     </section>
   );
 };

@@ -11,7 +11,6 @@ import FreeCourse from "./components/Free-course-section/FreeCourse";
 import Testimonials from "./components/Testimonial/Testimonials";
 import Newsletter from "./components/Newsletter/Newsletter";
 import Footer from "./components/Footer/Footer";
-// import Footer from "./components/Footer_1/Footer";
 
 const App = () => {
   const current_theme = localStorage.getItem("current_theme");

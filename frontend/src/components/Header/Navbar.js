@@ -6,6 +6,7 @@ import search_icon_light from "../../assests/search-w.png";
 import search_icon_dark from "../../assests/search-b.png";
 // import toggle_light from "../../assests/night.png";
 import toggle_dark from "../../assests/day.png";
+import { Outlet, Link } from "react-router-dom";
 
 const Navbar = ({ theme, setTheme }) => {
   const toggle_mode = () => {
@@ -20,11 +21,21 @@ const Navbar = ({ theme, setTheme }) => {
         className="logo"
       />
       <ul>
-        <li>Home</li>
-        <li>Tutorials</li>
-        <li>Excercises</li>
-        <li>Blog</li>
-        <li>About Us</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/tutorials">Tutorials</Link>
+        </li>
+        <li>
+          <Link to="/courses">Courses</Link>
+        </li>
+        <li>
+          <Link to="/blogs">Blogs</Link>
+        </li>
+        <li>
+          <Link to="/aboutus">About Us</Link>
+        </li>
       </ul>
       <div className="search-box">
         <input type="text" placeholder="Search" />
@@ -43,6 +54,7 @@ const Navbar = ({ theme, setTheme }) => {
         alt=""
         className="toggle-icon"
       />
+      <Outlet />
     </div>
   );
 };

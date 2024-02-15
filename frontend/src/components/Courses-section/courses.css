@@ -2,6 +2,11 @@
   padding: 15px;
 }
 
+.CourseCard-link {
+  color: inherit; /* Use the default text color */
+  text-decoration: none; /* Remove underline */
+}
+
 .course__img img {
   border-radius: 10px;
   margin-bottom: 20px;
