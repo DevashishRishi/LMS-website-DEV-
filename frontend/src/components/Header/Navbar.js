@@ -45,6 +45,9 @@ const Navbar = ({ theme, setTheme }) => {
           className="search-icon"
         />
       </div>
+      <div class="loginid">
+        <Link to="/login">Login</Link>
+      </div>
 
       <img
         onClick={() => {
