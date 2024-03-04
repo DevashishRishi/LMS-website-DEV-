@@ -5,7 +5,7 @@ import { Outlet, Link } from "react-router-dom";
 const NavbarItems = () => {
   return (
     <div className="navbar-items">
-      <ul className="items">
+      <ul className="items" style={{ listStyleType: "none" }}>
         <li>
           <Link to="/C">C</Link>
         </li>
@@ -28,18 +28,6 @@ const NavbarItems = () => {
           <Link to="/python">Javascript</Link>
         </li>
       </ul>
-      {/* <ul className="items">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JAVASCRIPT</li>
-        <li>PYTHON</li>
-        <li>JAVA</li>
-        <li>C</li>
-        <li>C++</li>
-        <li>C#</li>
-        <li>REACTJS</li>
-        <li>ANGULARJS</li>
-      </ul> */}
       <Outlet />
     </div>
   );

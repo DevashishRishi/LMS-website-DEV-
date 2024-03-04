@@ -1,29 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
+import "./C.css";
+import Introduction from "./Introduction";
+import CompilingACProgram from "./CompilingACProgram";
+import Footer from "../../components/Footer/Footer";
 
 const C = () => {
+  const [currentPage, setCurrentPage] = useState("Introduction");
+
+  const handleLinkClick = (pageName, event) => {
+    event.preventDefault();
+    setCurrentPage(pageName);
+  };
+
   return (
-    <div className="content">
-      <h1>C</h1>
-      <h3>Introduction</h3>
-      <p>
-        First, it is a general-purpose structural and procedural programming
-        language developed in 1972 by Dennis Ritchie at the Bell Labs.
-        <br />
-        It is called the fundamental of the Programming language or a base of
-        all kinds of programming languages.
-        <br />
-        It is strongly associated with UNIX as it was developed for the UNIX
-        Operating system along with other databases and applications.
-        <br />
-        If you are fluent in C language you will never have a problem
-        understanding other programming languages such as C++, JAVA, C#, and
-        Python.
-        <br />C is very old but very fast and versatile as it can be used in
-        application development like device drivers, protocol stacks, and games
-        as well. It has various versions also like C89/C90, C99, C11, and C18.
-        ANSI C and ISO C were the standardized version released around 1989, and
-        1990.
-      </p>
+    <div>
+      <div className="sidebar">
+        <a
+          href="/"
+          className={currentPage === "Introduction" ? "active" : ""}
+          onClick={(e) => handleLinkClick("Introduction", e)}
+        >
+          Introduction
+        </a>
+        <a
+          href="/"
+          className={currentPage === "CompilingACProgram" ? "active" : ""}
+          onClick={(e) => handleLinkClick("CompilingACProgram", e)}
+        >
+          Compiling a C Program
+        </a>
+        <a
+          href="/"
+          className={currentPage === "Operators" ? "active" : ""}
+          onClick={(e) => handleLinkClick("Operators", e)}
+        >
+          Operators
+        </a>
+        <a
+          href="/"
+          className={currentPage === "DataTypes" ? "active" : ""}
+          onClick={(e) => handleLinkClick("DataTypes", e)}
+        >
+          Data Types
+        </a>
+        <a
+          href="/"
+          className={currentPage === "Functions" ? "active" : ""}
+          onClick={(e) => handleLinkClick("Functions", e)}
+        >
+          Functions
+        </a>
+      </div>
+
+      <div className="content">
+        <div style={{ maxWidth: "1000px", padding: "20px" }}>
+          <h1>C</h1>
+          {currentPage === "Introduction" && <Introduction />}
+          {currentPage === "CompilingACProgram" && <CompilingACProgram />}
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };

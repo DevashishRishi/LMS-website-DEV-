@@ -9,7 +9,6 @@ const DeepLearningSidebar = () => {
         <li>Neural Networks</li>
         <li>Convolutional Neural Networks</li>
         <li>Recurrent Neural Networks</li>
-        {/* Add more sections as needed */}
       </ul>
     </div>
   );

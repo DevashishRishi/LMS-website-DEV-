@@ -1,0 +1,142 @@
+.sidebar {
+    margin: 0;
+    padding: 8px 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #17bf9e;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+div.content::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+div.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+div.content::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+div.content::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+        padding: 8px;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        padding: 8px;
+    }
+}
+
+.foot {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.numbered-list {
+    list-style-type: decimal;
+}
+
+.unnumbered-list {
+    list-style-type: disc;
+}
+
+.image-container {
+    background-color: #a4f4e4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+}
+
+.code-background{
+    border-radius: 10px;
+}
+
+.code-container {
+    background-color: #a4f4e4;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.code-container pre {
+    margin: 0;
+}
+
+.code-container code {
+    display: block;
+    white-space: pre-wrap;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

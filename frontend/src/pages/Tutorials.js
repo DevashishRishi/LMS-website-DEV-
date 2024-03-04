@@ -1,5 +1,13 @@
+import React from "react";
+import Footer from "../components/Footer/Footer";
+
 const Tutorials = () => {
-  return <h1>Tutorials</h1>;
+  return (
+    <div>
+      <h1 style={{ margin: "100px" }}>Tutorials</h1>
+      <Footer />
+    </div>
+  );
 };
 
 export default Tutorials;

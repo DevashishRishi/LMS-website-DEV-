@@ -1,5 +1,13 @@
+import React from "react";
+import Footer from "../components/Footer/Footer";
+
 const Blogs = () => {
-  return <h1>Blog Articles</h1>;
+  return (
+    <div>
+      <h1 style={{ margin: "100px" }}>Blogs</h1>
+      <Footer />
+    </div>
+  );
 };
 
 export default Blogs;

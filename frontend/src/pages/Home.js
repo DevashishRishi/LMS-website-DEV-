@@ -7,6 +7,7 @@ import Features from "../components/Feature-section/Features";
 import FreeCourse from "../components/Free-course-section/FreeCourse";
 import Testimonials from "../components/Testimonial/Testimonials";
 import Newsletter from "../components/Newsletter/Newsletter";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <Testimonials />
       </div>
       <Newsletter />
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,13 @@
+import React from "react";
+import Footer from "../components/Footer/Footer";
+
 const Courses = () => {
-  return <h1>Courses</h1>;
+  return (
+    <div>
+      <h1 style={{ margin: "100px" }}>Courses</h1>
+      <Footer />
+    </div>
+  );
 };
 
 export default Courses;

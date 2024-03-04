@@ -20,7 +20,7 @@ const Navbar = ({ theme, setTheme }) => {
         alt=""
         className="logo"
       />
-      <ul>
+      <ul style={{ listStyleType: "none" }}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -45,7 +45,7 @@ const Navbar = ({ theme, setTheme }) => {
           className="search-icon"
         />
       </div>
-      <div class="loginid">
+      <div className="loginid">
         <Link to="/login">Login</Link>
       </div>
 
