@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.activation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:100px;
+  margin-bottom:100px;
+  }
+
+  .activation-box{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1.2rem; */
+    border-radius: 30px;
+    border: 1px solid black;
+    box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* .activation-content {
+    background-color: #fff;
+    height: 100%;
+    width: 480px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+    border: none;
+    border-radius: 200px 30px 30px 150px;
+  } */
+
+  .activation-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .activation-heading {
+    background-color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+
+    border: none;
+    border-radius: 200px 30px 30px 150px;
+  }
+  
+  /* Loader animation */
+  .activation-loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

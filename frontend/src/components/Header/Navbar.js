@@ -31,7 +31,7 @@ const Navbar = ({ theme, setTheme }) => {
           <Link to="/courses">Courses</Link>
         </li>
         <li>
-          <Link to="/blogs">Blogs</Link>
+          <Link to="/placement">Placement</Link>
         </li>
         <li>
           <Link to="/aboutus">About Us</Link>

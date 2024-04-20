@@ -24,9 +24,9 @@ const NavbarItems = () => {
         <li>
           <Link to="/deep_learning">Deep Learning</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/python">Javascript</Link>
-        </li>
+        </li> */}
       </ul>
       <Outlet />
     </div>

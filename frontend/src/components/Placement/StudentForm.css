@@ -1,0 +1,46 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+form{
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+button{
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: #17bf9e;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 10px !important;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid #17bf9e;
+}
