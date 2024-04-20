@@ -5,109 +5,136 @@ const Introduction = () => {
   return (
     <div>
       <br />
-      <h3>Introduction</h3>
-      <p>
-        First, it is a general-purpose structural and procedural programming
-        language developed in 1972 by Dennis Ritchie at the Bell Labs.
+
+       <div>
+       <h3 className="subHead">Introduction</h3>
+        <p>
+            First, it is a general-purpose structural and procedural programming
+            language developed in 1972 by Dennis Ritchie at the Bell Labs.
         <br />
-        It is called the fundamental of the Programming language or a base of
-        all kinds of programming languages.
+            It is called the fundamental of the Programming language or a base of
+            all kinds of programming languages.
         <br />
-        It is strongly associated with UNIX as it was developed for the UNIX
-        Operating system along with other databases and applications.
+            It is strongly associated with UNIX as it was developed for the UNIX
+            Operating system along with other databases and applications.
         <br />
-        If you are fluent in C language you will never have a problem
-        understanding other programming languages such as C++, JAVA, C#, and
-        Python.
-        <br />C is very old but very fast and versatile as it can be used in
-        application development like device drivers, protocol stacks, and games
-        as well. It has various versions also like C89/C90, C99, C11, and C18.
-        ANSI C and ISO C were the standardized version released around 1989, and
-        1990.
+            If you are fluent in C language you will never have a problem
+            understanding other programming languages such as C++, JAVA, C#, and
+            Python.
+        <br />
+            C is very old but very fast and versatile as it can be used in
+            application development like device drivers, protocol stacks, and games
+            as well. It has various versions also like C89/C90, C99, C11, and C18.
+            ANSI C and ISO C were the standardized version released around 1989, and
+            1990.
       </p>
+       </div>
       <br />
-      <h3>Difference between C and C++</h3>
-      <p className="unnumbered-list" style={{ listStyleType: "disc" }}>
-        After developing C, C++ is developed by Bjarne Stroustrup as an extended
-        version of C.
-        <br />
-        C is a procedural language but C++ is an object-oriented programming
-        language that supports classes and objects while C does not.
-        <br />
-        Approach: - C is a top-down approach but C++ is a bottom-up approach.
-        <br />
-        C contains 32 keywords but C++ can contain 63 keywords.
-        <br />
-        C supports built-in data types but C++ contains both Built-in as well as
-        user-defined data types.
-        <br />
-        C does not have an access modifier but C++ has.
-        <br />
-        C does not support reference variables but C++ does.
-        <br />
-        C has code in separate blocks known as functions but C++ code is divided
-        into objects and class.
-        <br />
-        C is used in MySql, Windows Kerne, Oracle Database, Telegram Messenger,
-        etc and C++ is used in Google Chrome, Microsoft Office, 3-D games, etc.
-        <br />
-      </p>
-      <br />
-      <h3>Advantages of C</h3>
-      <ol class="numbered-list">
+
+      <div>
+      <h3 className="subHead">Difference between C and C++</h3>
+      <ol style={{listStyleType:"disc"}}>
         <li>
           <p>
-            Efficiency: C is a fast and efficient language that can be used to
-            create high-performance applications.
+              After developing C, C++ is developed by Bjarne Stroustrup as an extended version of C.
           </p>
         </li>
         <li>
           <p>
-            Portability: C programs can be compiled and run on a wide range of
-            platforms and operating systems.
+              C is a procedural language but C++ is an object-oriented programming language that supports classes and objects while C does not.
           </p>
         </li>
         <li>
           <p>
-            Low-level access: C provides low-level access to system resources,
-            making it ideal for systems programming and developing operating
-            systems.
+              C is a top-down approach but C++ is a bottom-up approach.
           </p>
         </li>
         <li>
           <p>
-            Large user community: C has a large and active user community, which
-            means there are many resources and libraries available for
-            developers.
+              C contains 32 keywords but C++ can contain 63 keywords.
           </p>
         </li>
         <li>
           <p>
-            Widely used: C is a widely used language, and many modern
-            programming languages are built on top of it.
+             C supports built-in data types but C++ contains both Built-in as well as user-defined data types.
+          </p>
+        </li>
+        <li>
+          <p>
+              C does not have an access modifier but C++ has.
+          </p>
+        </li>
+        <li>
+          <p>
+              C does not support reference variables but C++ does.
+          </p>
+        </li>
+        <li>
+          <p>
+            C has code in separate blocks known as functions but C++ code is divided into objects and class.
+          </p>
+        </li>
+        <li>
+          <p>
+              C is used in MySql, Windows Kerne, Oracle Database, Telegram Messenger, etc and C++ is used in Google Chrome, Microsoft Office, 3-D games, etc.
           </p>
         </li>
       </ol>
+      </div>
       <br />
-      <h3>Disadvantages of C</h3>
+
+      <div>
+        <h3 className="subHead">Advantages of C</h3>
+        <ol class="numbered-list">
+          <li>
+            <p>
+              <b>Efficiency :-</b>- C is a fast and efficient language that can be used to create high-performance applications.
+            </p>
+          </li>
+          <li>
+            <p>
+            <b> Portability :-</b> C programs can be compiled and run on a wide range of platforms and operating systems.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Low-level access :-</b> C provides low-level access to system resources, making it ideal for systems programming and developing operating systems.
+            </p>
+          </li>
+          <li>
+          <p>
+            <b>Large user community :-</b> C has a large and active user community, which means there are many resources and libraries available for developers.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Widely used :-</b> C is a widely used language, and many modern programming languages are built on top of it.
+          </p>
+        </li>
+      </ol>
+      </div>
+      <br />
+      
+      <div>
+      <h3 className="subHead">Disadvantages of C</h3>
       <ol class="numbered-list">
         <li>
           <p>
-            Steep learning curve: C can be difficult to learn, especially for
+            <b>Steep learning curve :-</b> C can be difficult to learn, especially for
             beginners, due to its complex syntax and low-level access to system
             resources.
           </p>
         </li>
         <li>
           <p>
-            Lack of memory management: C does not provide automatic memory
+            <b>Lack of memory management :-</b> C does not provide automatic memory
             management, which can lead to memory leaks and other memory-related
             bugs if not handled properly.
           </p>
         </li>
         <li>
           <p>
-            No built-in support for object-oriented programming: C does not
+            <b>No built-in support for object-oriented programming :-</b> C does not
             provide built-in support for object-oriented programming, making it
             more difficult to write object-oriented code compared to languages
             like Java or Python.
@@ -115,20 +142,23 @@ const Introduction = () => {
         </li>
         <li>
           <p>
-            No built-in support for concurrency: C does not provide built-in
+            <b>No built-in support for concurrency :-</b> C does not provide built-in
             support for concurrency, making it more difficult to write
             multithreaded applications compared to languages like Java or Go.
           </p>
         </li>
         <li>
           <p>
-            Security vulnerabilities: C programs are prone to security
+            <b>Security vulnerabilities :-</b> C programs are prone to security
             vulnerabilities, such as buffer overflows, if not written carefully.
           </p>
         </li>
       </ol>
+      </div>
       <br />
-      <h3>Getting started with C</h3>
+
+      <div>
+      <h3 className="subHead">Getting started with C</h3>
       <p>
         Communication with a machine involves speaking in a language the
         computer understands, which immediately rules out English as the default
@@ -151,8 +181,11 @@ const Introduction = () => {
         </div>
         <br />
       </p>
+      </div>
       <br />
-      <h3>Beginning of C programming</h3>
+
+      <div>
+      <h3 className="subHead">Beginning of C programming</h3>
       <p>
         Let's understand the basic concepts of the language and its keywords by
         writing one small code
@@ -177,12 +210,15 @@ const Introduction = () => {
           </pre>
         </div>
       </div>
-      <br />
       <p>
         Now, output will be 10
         <br />
       </p>
-      <h5>Structure of the program</h5>
+      </div>
+      <br />
+      
+      <div>
+      <h5 className="subHead">Structure of the program</h5>
       <p>
         <code style={{ color: "grey" }}>
           #include &lt;stdio.h&gt; [Header]
@@ -198,9 +234,13 @@ const Introduction = () => {
           &#125; <br />
         </code>
       </p>
+      </div>
+
+      <div>
       <p>Let’s understand components and keywords in brief </p>
       <br />
-      <h5>Header file </h5>
+      <div>
+      <h5 className="subHead">Header file </h5>
       <p>
         The very first keyword or the line is #include&lt;stdio.h&gt; in a C
         program. (.h) is a header file having functions, declarations, and macro
@@ -243,7 +283,10 @@ const Introduction = () => {
         </table>
         <br />
       </p>
-      <h5>Body of the method (enclosed in{})</h5>
+      </div>
+
+      <div>
+      <h5 className="subHead">Body of the method (enclosed in{})</h5>
       <p>
         The main manipulation will hold in the body part. It can be like
         anything as manipulations, searching, sorting, printing etc. <br />
@@ -257,7 +300,10 @@ const Introduction = () => {
         monitor as output. <br />
         <br />
       </p>
-      <h5>Return statement</h5>
+      </div>
+
+      <div>
+      <h5 className="subHead">Return statement</h5>
       <p>
         It is called the last section of the C program. It refers to the return
         values from a function. These values and the function depend upon the
@@ -265,7 +311,11 @@ const Introduction = () => {
         Maybe it is used by our OS to know the termination status of the program
         as 0 indicates the successful termination.
       </p>
-    </div>
+      </div>
+
+      </div>
+
+      </div>
   );
 };
 

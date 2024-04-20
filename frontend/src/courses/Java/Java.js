@@ -1,41 +1,130 @@
-import React from "react";
-
+import React, { useState, useEffect, useRef } from "react";
+import "./Java.css";
+import Introduction from "./Introduction";
+import Footer from "../../components/Footer/Footer";
+import DataTypes from "./DataTypes";
+import Variables from "./Variables";
+import Operators from "./Operators";
+import Arrays from "./Arrays";
+import String from "./String";
+import MultiDimensionalArray from "./MultiDimensionalArray";
+import OOPS from "./OOPS";
+import Collection from "./Collection";
+import Multithreading from "./Multithreading";
+import Exception from "./Exception";
+import Spring from "./Spring";
 const Java = () => {
+  const pages = [
+    "Introduction",
+    "Data types",
+    "Variables",
+    "Operators",
+    "Arrays",
+    "MultiDimensional array",
+    "OOPS",
+    "String",
+    "Exception",
+    "Collection",
+    "Spring",
+    "Multithreading",
+  ];
+
+  const [currentPageIndex, setCurrentPageIndex] = useState(0);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    contentRef.current.scrollTo(0, 0);
+  }, [currentPageIndex]);
+
+  const goToPreviousPage = () => {
+    setCurrentPageIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : prevIndex
+    );
+  };
+
+  const goToNextPage = () => {
+    setCurrentPageIndex((prevIndex) =>
+      prevIndex < pages.length - 1 ? prevIndex + 1 : prevIndex
+    );
+  };
+
+  const handleLinkClick = (pageName, event) => {
+    event.preventDefault();
+    const pageIndex = pages.indexOf(pageName);
+    setCurrentPageIndex(pageIndex);
+  };
+
+  const currentPage = pages[currentPageIndex];
+
   return (
-    <div className="content">
-      <h1>Java</h1>
-      <br />
-      <h3>Introduction</h3>
-      <br />
-      <h4>What is Java?</h4>
-      <br />
-      <p>
-        Java is a widely used object-oriented programming language and software
-        that runs on billions of devices, including laptops, mobile devices,
-        game consoles, medical devices and more. Java's rules and syntax are
-        based on C and C++.
-        <br />
-        One of the great advantages of Java software development is its
-        portability. Once you have written the code for a Java program on a
-        laptop, it is very easy to transfer the code to a mobile phone. When the
-        language was invented in 1991 by James Gosling of Sun Microsystems
-        (later acquired by Oracle), the main goal was to "write once, run
-        anywhere”.
-        <br />
-        It's also important to understand that Java is very different from
-        JavaScript. JavaScript does not need to be compiled, while Java code
-        must be compiled. Also, JavaScript only works in web browsers, while
-        Java can be used anywhere.
-        <br />
-        New and improved software tools are entering the market at a remarkable
-        rate, replacing legacy products that were previously considered
-        essential. In light of this constant turnover, Java's longevity is
-        impressive; more than two decades after its creation, Java remains the
-        most popular language for developing applications, with developers
-        continuing to choose it over languages such as Python, Ruby, PHP, Swift,
-        C++, and more. Therefore, Java remains an important requirement to
-        compete in the job market.
-      </p>
+    <div>
+      <div className="sidebar">
+        {pages.map((pageName, index) => (
+          <a
+            key={index}
+            href="/"
+            className={currentPage === pageName ? "active" : ""}
+            onClick={(e) => handleLinkClick(pageName, e)}
+          >
+            {pageName}
+          </a>
+        ))}
+      </div>
+
+      <div className="content" ref={contentRef}>
+        <div style={{ maxWidth: "1000px", padding: "20px" }}>
+          <h1>Java</h1>
+          <div className="pagination">
+            <button
+              onClick={goToPreviousPage}
+              disabled={currentPageIndex === 0}
+            >
+              Previous
+            </button>
+            <button
+              className="next"
+              onClick={goToNextPage}
+              disabled={currentPageIndex === pages.length - 1}
+            >
+              Next
+            </button>
+          </div>
+          {currentPage === "Introduction" && <Introduction />}
+          {currentPage === "Data types" && <DataTypes />}
+          {currentPage === "Variables" && <Variables />}
+          {currentPage === "Operators" && <Operators />}
+          {currentPage === "Arrays" && <Arrays />}
+          {currentPage === "MultiDimensional array" && (
+            <MultiDimensionalArray />
+          )}
+          {currentPage === "OOPS" && <OOPS />}
+          {currentPage === "String" && <String />}
+          {currentPage === "Exception" && <Exception />}
+          {currentPage === "Collection" && <Collection />}
+          {currentPage === "Spring" && <Spring />}
+          {currentPage === "Multithreading" && <Multithreading />}
+          <div className="pagination">
+            <button
+              onClick={goToPreviousPage}
+              disabled={currentPageIndex === 0}
+              style={{ marginTop: "30px" }}
+            >
+              Previous
+            </button>
+            <button
+              className="next"
+              onClick={goToNextPage}
+              disabled={currentPageIndex === pages.length - 1}
+              style={{ marginTop: "30px" }}
+            >
+              Next
+            </button>
+          </div>
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };

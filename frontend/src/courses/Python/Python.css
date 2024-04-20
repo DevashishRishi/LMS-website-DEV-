@@ -86,19 +86,22 @@ div.content::-webkit-scrollbar-thumb {
 div.content::-webkit-scrollbar-thumb:hover {
     background: transparent;
 }
+span.pycode{
+    color:rgb(107, 6, 147);
+}
+.pyoperator{
+    color:blue;
+}
+.pyvalue{
+    color:red;
+}
 
 span.formula{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    font-style: italic;
     margin:2%;
-    color:#585151;
-}
-span.emFont{
-    font-style: italic;
-    color: #585151;
 }
 
 .figure-container {
@@ -136,9 +139,7 @@ span.emFont{
 span.codeKey{
     color: blue;
 }
-span.codeComment{
-    color:rgb(49, 207, 49);
-}
+
 
 .Pseudo{
     font-size: 17px;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Anta&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 .sidebar {
     margin: 0;
     padding: 8px 0;
@@ -19,6 +20,7 @@
     padding: 8px 16px;
     text-decoration: none;
 }
+
 .sidebar a.active {
     background-color: #17bf9e;
     color: white;
@@ -46,11 +48,6 @@ h3 {
     margin-top: 1.5em;
     margin-bottom: 1em;
 }
-.subHead{
-    color:#ffa62b;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 450;
-}
 
 h4 {
     color: #333;
@@ -62,7 +59,14 @@ p {
     text-align: justify;
 }
 
-    
+
+
+.subHead {
+    color: #ffa62b;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 450;
+}
+
 div.content {
     margin-left: 200px;
     padding: 1px 16px;
@@ -87,33 +91,28 @@ div.content::-webkit-scrollbar-thumb:hover {
     background: transparent;
 }
 
-span.formula{
+span.formula {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    font-style: italic;
-    margin:2%;
-    color:#585151;
-}
-span.emFont{
-    font-style: italic;
-    color: #585151;
+    margin: 2%;
 }
 
 .figure-container {
     background-color: #a4f4e4;
     padding: 20px;
     border-radius: 10px;
-    width:fit-content;
+    width: fit-content;
     margin-left: 20%;
 }
 
 .figure-container img {
-    display:flexbox;
+    display: flexbox;
     width: 100%;
 }
-.code-background{
+
+.code-background {
     border-radius: 10px;
 }
 
@@ -133,19 +132,20 @@ span.emFont{
     white-space: pre-wrap;
 }
 
-span.codeKey{
+span.codeKey {
     color: blue;
 }
-span.codeComment{
-    color:rgb(49, 207, 49);
+
+span.codeComment {
+    color: rgb(49, 207, 49);
 }
 
-.Pseudo{
+.Pseudo {
     font-size: 17px;
-    color:#4b5e63;
-    width:80%;
+    color: #4b5e63;
+    width: 80%;
     margin-left: 10%;
-    padding:2%;
+    padding: 2%;
     padding-top: 0;
     font-family: "Noto Serif", serif;
 }
@@ -156,10 +156,12 @@ span.codeComment{
         height: auto;
         position: relative;
     }
+
     .sidebar a {
         float: left;
         padding: 8px;
     }
+
     div.content {
         margin-left: 0;
     }
@@ -171,4 +173,10 @@ span.codeComment{
         float: none;
         padding: 8px;
     }
+}
+
+h3 {
+    color: #ffa62b;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 450;
 }
