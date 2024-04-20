@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:50px;
+    margin-top:100px;
     margin-bottom:100px;
 }
 
@@ -146,6 +146,7 @@
     color: #fff;
     border: 1px solid #fff;
     cursor: pointer;
+    text-decoration: none !important;
 }
 
 .signup-btn:hover {

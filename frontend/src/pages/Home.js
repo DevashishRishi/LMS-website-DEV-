@@ -1,5 +1,5 @@
 import HeroSection from "../components/Hero-Section/HeroSection";
-import CompanySection from "../components/Company-section/Company";
+// import CompanySection from "../components/Company-section/Company";
 import AboutUs from "../components/About-us/AboutUs";
 import Courses from "../components/Courses-section/Courses";
 import ChooseUs from "../components/Choose-us/ChooseUs";
@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <div className="container">
         <HeroSection />
-        <CompanySection />
+        {/* <CompanySection /> */}
         <AboutUs />
         <Courses />
         <ChooseUs />
