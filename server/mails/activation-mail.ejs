@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #4a86e8;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .activation-code {
+            display: inline-block;
+            background-color: #4a86e8;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .activation-code:hover {
+            background-color: #356de8;
+        }
+
+        .otp-image {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #4a86e8;
+            margin-left: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #4a86e8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to Digital Learning!</h1>
+            <p>Hello <%= user.name %>,</p>
+            <p>We are thrilled to welcome you to Digital Learning, your gateway to a world of knowledge and opportunities!</p>
+            <p>To get started, please use the following activation code:</p>
+            <a href="#" class="activation-code">
+                <span class="activation-code-text"><%= activationCode %></span>
+                <span class="otp-image"></span>
+            </a>
+            <p>This code is valid for the next 15 minutes.</p>
+            <p>If you need any assistance, please don't hesitate to reach out to our support team at <a href="mailto:example@gmail.com">example@gmail.com</a>.</p>
+            <p>Happy learning!</p>
+        </div>
+    </div>
+</body>
+</html>
